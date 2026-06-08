@@ -1,22 +1,25 @@
-Portal Academico - Tarea 1
-De que trata el proyecto
-Este es el proyecto que tengo que entregar para la primera unidad de la diplomatura. La idea fue armar desde cero la interfaz de registro para un Campus Virtual o Portal Académico. Para el diseño busque separar la pantalla en dos columnas mediante una distribución limpia: el bloque de la izquierda se mantiene volando sobre el fondo gris claro para guiar al usuario de forma visual, mientras que el bloque de la derecha tiene el formulario estructurado como una tarjeta flotante blanca con sombras sutiles y esquinas redondeadas. 
+# Portal Academico - Tarea 1
 
-Que tecnologias y conceptos aplique
-Para la estructura use HTML5 Semantico implementando las etiquetas correspondientes como header, main, footer y article para que el documento este bien ordenado y sea accesible. En la parte de Formularios e Inputs meti validaciones nativas, agrupe campos como Nombre/Apellido y Contrasenas en filas simetricas usando contenedores logicos, y conecte los label con sus respectivos input mediante los atributos for, id y name.  
-En cuanto a CSS3, declare variables globales en el root para manejar la paleta de colores institucional y la tipografia base desde un archivo externo. Tambien use Flexbox para lograr una maquetacion responsive que alinea el contenido en columnas en pantallas grandes y se acomoda solo en vertical si se abre desde un celular. Diseñe los estados interactivos con pseudoclases como hover en los enlaces del menu y el boton, y focus para meter el anillo celeste de luz en los campos de texto activos. La imagen de la tablet respeta el limite de ancho maximo de 300px y tiene los bordes redondeados como pide la consigna.  
+## De que trata el proyecto
+Este es el proyecto para la primera unidad de la diplomatura. Armé una página de registro para un portal académico simulando el ingreso a un campus virtual.
 
-Estructura de archivos
-El proyecto esta compuesto por el archivo index.html que contiene la estructura semantica de la pagina , el archivo style.css que es la hoja de estilos externa con las variables de diseño , el archivo app.js que esta enlazado para meter la logica de interacciones del lado del cliente, y la carpeta public que funciona como contenedor de assets donde guardo la imagen de la tablet. 
+Para la interfaz busqué un diseño simple en dos columnas: a la izquierda metí la info de los pasos con la imagen de la tablet y a la derecha armé el formulario adentro de una tarjeta blanca con un poco de sombra y bordes redondeados para que resalte.
 
-Como clonar y abrir el proyecto
-Para correr el sitio de forma local en la PC primero abris la terminal y clonas el repositorio usando el comando git clone https://github.com/santiagosessa/Tarea-1.git. 
-Despues entras a la carpeta que se creo y abris el archivo index.html en tu navegador.  
-  
-Mis datos de autor
-Mi nombre es Santiago Sessa y curse la Unidad 1 del Módulo 1 en el curso Antes de React.  
+## Cómo lo armé
+Hice el desarrollo de forma individual aplicando lo que vimos en clase. Estructuré todo con etiquetas semánticas de HTML5 (header, main, article, footer) para que quede bien organizado y cargué las validaciones nativas en los campos del formulario.
 
-Bibliografia consultada
-Para el desarrollo de la interfaz consulte las referencias oficiales de HTML y CSS en MDN Web Docs , el estándar general de HTML Living Standard (2025) de WHATWG , y el libro HTML & CSS: Design and Build Websites de Jon Duckett publicado en 2011.  
+Para los estilos usé CSS externo con Flexbox para que la página sea responsive y se acomode bien si se abre desde un celular. También creé variables en el root para manejar los colores institucionales más rápido y le sumé efectos visuales básicos como el hover en los botones y el foco celeste en los inputs cuando estás escribiendo.
 
-![Vista final del Portal Academico](public/pagina-terminada.png)
+## Estructura de archivos
+* index.html - Estructura de la página.
+* style.css - Estilos y variables.
+* public/ - Carpeta con la imagen de la tablet.
+
+## Cómo correrlo
+1. Clonás el repositorio: git clone https://github.com/santiagosessa/Tarea-1.git
+2. Abrís el index.html en cualquier navegador.
+
+![Vista final del Portal Academico](public/resultado.png)
+
+## Autor
+Santiago Sessa - Módulo 1 (Unidad 1). Proyecto realizado de manera autónoma.
