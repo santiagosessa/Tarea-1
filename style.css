@@ -1,0 +1,204 @@
+:root {
+    --color-institucion: #1e293b;
+    --color-acento: #0ea5e9;
+    --color-acento-hover: #0284c7;
+    --color-fondo: #f1f5f9;
+    --color-texto: #334155;
+    --fuente-base: system-ui, -apple-system, sans-serif;
+}
+
+body { 
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: var(--fuente-base);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--color-institucion);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0 0 0 20px;
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    margin: 0 20px 0 0;
+    padding: 0;
+}
+
+header nav ul li a{
+    color: #cbd5e1;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+
+}
+
+header nav ul li a:hover {
+    color: white;
+    background-color: #ffffff1a;
+}
+
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.bienvenida{
+    flex: 1.3;
+    min-width:320px;
+    padding: 35px;
+
+}
+
+.bienvenida h2 {
+        font-size: 2.2rem;
+        color: var(--color-institucion);
+        margin-top: 0.5rem;
+}
+
+.bienvenida p {
+    font-size: 1.1rem;
+    color: #475569;
+
+}
+
+.contenedor-img {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.tablet {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    margin: 20px 0;
+    border: 3px solid white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.bienvenida h3 {
+    font-size: 1.2rem;
+    color: var(--color-institucion);
+    margin-top: 30px;
+}
+
+article li {
+    background-color: #ffffff99;
+    margin-bottom: 10px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-left: 4px solid var(--color-acento);
+    color: var(--color-texto);
+    list-style-position: inside;
+}
+
+form {
+    min-width:320px;
+    padding: 35px;
+    flex: 1;
+    background-color: white;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+
+form h3{
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--color-institucion);
+    margin-top: 0;
+
+}
+
+button {
+    background-color: var(--color-acento);
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--color-acento-hover);
+}
+
+input, select {
+    width: 100%;
+    padding:18px;
+    font-size: 1rem;
+    box-sizing:border-box;
+    margin-bottom: 20px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background-color: #f8fafc;
+    font-family: inherit;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: var(--color-acento);
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.2);
+}
+
+.fila-nombre {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.fila-password {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.grupo-input {
+    flex: 1;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #475569;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: var(--color-institucion);
+    color: #94a3b8;
+    margin-top:40px
+}
